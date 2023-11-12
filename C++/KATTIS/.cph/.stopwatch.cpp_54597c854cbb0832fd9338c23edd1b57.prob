@@ -1,0 +1,1 @@
+{"name":"Local: stopwatch","url":"c:\\Coding\\C++\\KATTIS\\stopwatch.cpp","tests":[{"id":1699773777110,"input":"5\n2\n5\n9\n10\n17\n","output":"still running"},{"id":1699773787520,"input":"4\n0\n2\n104\n117","output":"15"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Coding\\C++\\KATTIS\\stopwatch.cpp","group":"local","local":true}

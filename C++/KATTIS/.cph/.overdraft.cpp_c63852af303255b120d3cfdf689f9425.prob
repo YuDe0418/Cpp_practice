@@ -1,0 +1,1 @@
+{"name":"Local: overdraft","url":"c:\\Coding\\C++\\KATTIS\\overdraft.cpp","tests":[{"id":1699770197322,"input":"3\n3\n-5\n3","output":"2"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Coding\\C++\\KATTIS\\overdraft.cpp","group":"local","local":true}

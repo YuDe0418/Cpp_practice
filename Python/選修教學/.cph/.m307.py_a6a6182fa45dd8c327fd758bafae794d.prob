@@ -1,0 +1,1 @@
+{"name":"Local: m307","url":"c:\\Coding\\Python\\選修教學\\m307.py","tests":[{"id":1697978439801,"input":"10 3\n1 5 13","output":"2 1"},{"id":1697978447566,"input":"10 9\n-1 13 12 16 100 -9 7 8 25","output":"5 100"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Coding\\Python\\選修教學\\m307.py","group":"local","local":true}

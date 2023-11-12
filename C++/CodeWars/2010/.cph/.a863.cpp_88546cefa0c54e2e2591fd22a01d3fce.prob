@@ -1,0 +1,1 @@
+{"name":"Local: a863","url":"c:\\Coding\\C++\\CodeWars\\2010\\a863.cpp","tests":[{"id":1697808629892,"input":"32\n4565","output":"32 is a happy number\n4565 is an unhappy number"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Coding\\C++\\CodeWars\\2010\\a863.cpp","group":"local","local":true}
