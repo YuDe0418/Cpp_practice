@@ -18,10 +18,10 @@ using namespace std;
 #define ct(n) cout << n << endl;
 #define rt0 return 0;
 #define ctn continue;
-#define bk break;
+#define bk break;A
 
 
 signed main(void)
 {
-
+    IO
 }

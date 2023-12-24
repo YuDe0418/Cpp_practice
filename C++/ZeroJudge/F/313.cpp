@@ -4,48 +4,47 @@ using namespace std;
 #define FOR(i,n) for(int i = 0; i < n; ++i)
 #define DFOR(a,b) FOR(i,a) FOR(j,b)
 #define Dinput(x,a,b) DFOR(a,b) cin >> x[i][j] //讀入二維陣列
+#define int long long
 
-//未完成
-
-int main(){
+signed main(void){
    fast;
     int r,c,k,m; cin >> r >> c >> k >> m;
-    int A[r][c], T[r][c], num, t, l; //A存總人數 T存遷移增加的人數
+    int A[r][c], T[r][c], num, t, p, l; //A存總人數 T存遷移增加的人數
     Dinput(A,r,c);
-    FOR(q,m){
-        DFOR(r,c) T[r][c] = 0;
-        DFOR(r,c){
-            if(A[i][j] == -1) continue;
-            num=A[i][j]/k;
-            t=0;
-            if(i!=0 && A[i-1][j]!=-1){
-                    T[i-1][j]+=num;
+    FOR(q,m)
+    {
+        //DFOR(r,c) T[r][c] = 0;
+        DFOR(r,c)
+        {
+            if(A[i][j] == -1) T[i][j] = 0;
+            else
+            {
+                t = 0; p = 0;
+                if(i!=0 && A[i-1][j]!=-1)
+                {
+                    p += A[i-1][j]/k;
                     t++;    
-            }
-            if(j!=0 && A[i][j-1]!=-1){                   
-                    T[i][j-1]+=num;
+                }
+                if(j!=0 && A[i][j-1]!=-1)
+                {                   
+                    p += A[i][j-1]/k;
                     t++;                    
-            }
-            if(i!=r-1 && A[i+1][j]!=-1){                    
-                    T[i+1][j]+=num;
-                    t++;                   
-            }
-            if(j!=c-1 && A[i][j+1]!=-1){
-                    T[i][j+1]+=num;
-                    t++;
-            }
-            A[i][j]-=num*t;
-            
+                }
+                if(i!=r-1 && A[i+1][j]!=-1)
+                {                    
+                    p += A[i+1][j]/k;
+                    t++;                    
+                }
+                if(j!=c-1 && A[i][j+1]!=-1)
+                {
+                    p += A[i][j+1]/k;
+                    t++;  
+                }
+                num = A[i][j] / k * t; // 搬出去的人就是 現在這個城市的人/k 乘 相鄰城市數
+                T[i][j] = p - num; // 更新這天這個城市的變化人為 搬進來的 - 搬出去的
+                }
         }
-        DFOR(r,c) if(A[i][j]!=-1) A[i][j]+=T[i][j]; //更新人數
-        // FOR(i,r)
-        // {
-        //     FOR(j,c)
-        //     {
-        //         cout << A[i][j] << ' ';
-        //     }
-        //     cout << '\n';
-        // }
+         DFOR(r,c)  A[i][j] += T[i][j]; //更新人數
     }
     
     int maxn = INT_MIN, minn = INT_MAX;
@@ -58,5 +57,5 @@ int main(){
             minn = min(minn,A[i][j]);
         }
     }
-    cout << "\n" << minn << "\n" << maxn << "\n";
+    cout  << minn << "\n" << maxn << "\n";
 }
