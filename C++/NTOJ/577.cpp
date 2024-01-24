@@ -10,7 +10,6 @@ signed main(void)
     long long a,b,ans;
     while(n--)
     {
-        
         cin >> a >> b;
         ans = a;
         for(int i=1;i<b;i++)

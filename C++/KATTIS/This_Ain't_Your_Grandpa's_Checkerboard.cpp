@@ -3,10 +3,13 @@ using namespace std;
 #define fast ios::sync_with_stdio; cin.tie(0); cout.tie(0)
 #define FOR(i,n) for(int i = 0; i < n; ++i)
 
-bool correct_grid(vector<string>& x, int n){
-    FOR(i,n){
+bool correct_grid(vector<string>& x, int n)
+{
+    FOR(i,n)
+    {
         int r_B=0, r_W=0, c_B=0, c_W=0;
-        FOR(j,n){
+        FOR(j,n)
+        {
             //檢查同列的黑白數
             if (x[i][j] == 'B') r_B++;
             else r_W++;
@@ -15,7 +18,8 @@ bool correct_grid(vector<string>& x, int n){
             else c_W++;
 
             // 檢查是否有連續三個或更多同色
-            if (j < n - 2) {
+            if (j < n - 2) 
+            {
                 if (x[i][j] == x[i][j + 1] && x[i][j] == x[i][j + 2])
                     return false;
                 if (x[j][i] == x[j + 1][i] && x[j][i] == x[j + 2][i])
@@ -28,7 +32,7 @@ bool correct_grid(vector<string>& x, int n){
                 return false;
         }
         return true;
-    }
+}
 int main(){
     fast;
     int n; cin>>n;

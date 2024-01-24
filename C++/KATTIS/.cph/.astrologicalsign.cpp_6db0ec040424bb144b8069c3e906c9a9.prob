@@ -1,0 +1,1 @@
+{"name":"Local: astrologicalsign","url":"c:\\Coding\\C++\\KATTIS\\astrologicalsign.cpp","tests":[{"id":1703405555648,"input":"2\n5 May\n30 Jul","output":"Taurus\nLeo"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Coding\\C++\\KATTIS\\astrologicalsign.cpp","group":"local","local":true}

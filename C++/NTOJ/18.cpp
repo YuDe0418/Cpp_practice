@@ -14,7 +14,7 @@ signed main(void)
         }
         //cout << ns << endl;
         bool same = true;
-        for(int i=0;i<s.size()/2;i++)
+        for(int i=0;i<=ns.size()/2;i++)
         {
             if(ns[i] == ns[ns.size()-i-1]) continue;
             else same = false;

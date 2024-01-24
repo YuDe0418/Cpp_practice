@@ -2,7 +2,7 @@
 using namespace std;
 
 
-int main(void)
+int main()
 {
     long long n, k;
     while(cin >> n >> k)
