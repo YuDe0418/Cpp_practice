@@ -19,12 +19,55 @@ using namespace std;
 #define rt0 return 0;
 #define ctn continue;
 #define bk break;
-#define int long long;
+#define int long long
+/*
+int idx = 0;
 
+void sol(int k)
+{
+    vt(v)
+    if(k == 1)
+    {
+        int x; cin >> x;
+        v.emplace_back(x);
+    }
+    else if(k == 2)
+    {
+        if(v.empty()) cout << -1 << endl;
+        else cout << v[0] << endl;
+    }
+    else if(K == 3)
+    {
+        if(v.empty()) continue;
+        else
+    }
+}
+*/
 
 signed main(void)
 {
     IO
-    int n; cin >> n;
-    
+    queue<int>q;
+    int n,k; cin >> n;
+
+    while(n--)
+    {
+        cin >> k;
+        if(k == 1)
+        {
+            int x; cin >> x;
+            q.emplace(x);
+        }
+        else if(k == 2) 
+        {
+            if(q.empty()) cout << -1 << endl;
+            else cout << q.front() << endl;
+        }
+        else 
+        {
+            if(q.empty()) continue;
+            else q.pop();
+        }
+    }
+
 }
