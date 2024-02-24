@@ -38,8 +38,10 @@ using namespace std;
 const ll md = 1e9+7;
 
 
+
 signed main(void)
 {
     IO
     read(n);
+    
 }

@@ -37,9 +37,33 @@ using namespace std;
 
 const ll md = 1e9+7;
 
+map<string, int> tb = {{"J", 11}, {"Q", 12}, {"K", 13}};
 
 signed main(void)
 {
     IO
     read(n);
+    
+    //map<string, int> tb = {{"J", 11}, {"Q", 12}, {"K", 13}};
+    
+    int a,b;
+    int at=0,bt=0;
+    
+    FOR(i,0,n)
+    {
+    	pair<string,string>p;
+    	cin >> p.F >> p.S;
+    	
+    	if (p.F == "J" || p.F == "Q" || p.F == "K") a = tb[p.F];
+        else a = stoi(p.F);
+
+        if (p.S == "J" || p.S == "Q" || p.S == "K") b = tb[p.S];
+        else b = stoi(p.S);
+
+        
+        if (a > b) bt += a - b;
+        else if (a < b) at += b - a;
+         
+    }
+    cout << at << " " << bt << endl;
 }
