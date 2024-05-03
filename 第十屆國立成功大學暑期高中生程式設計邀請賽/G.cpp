@@ -8,11 +8,11 @@ const ll md = 1e9+7;
 
 int a,b,c,d,x1,x2,x3,x4;
 
-bool duck(int num) {
+bool duck(int num){
     return (num == 2 || num == 3 || num == 9);
 }
 
-int calculate(int a, int b, int c, int d, int x1, int x2, int x3, int x4) {
+int calculate(int a, int b, int c, int d, int x1, int x2, int x3, int x4){
     int sc=0;
 	if (a % 2 == 0) sc += x1;
     if (duck(b) || duck(d)) sc += x2;

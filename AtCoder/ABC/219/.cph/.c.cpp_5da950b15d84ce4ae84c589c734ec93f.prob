@@ -1,0 +1,1 @@
+{"name":"Local: c","url":"c:\\Coding\\C++\\AtCoder\\ABC\\219\\c.cpp","tests":[{"id":1714269159509,"input":"bacdefghijklmnopqrstuvwxzy\n4\nabx\nbzz\nbzy\ncaa","output":"bzz\nbzy\nabx\ncaa"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Coding\\C++\\AtCoder\\ABC\\219\\c.cpp","group":"local","local":true}

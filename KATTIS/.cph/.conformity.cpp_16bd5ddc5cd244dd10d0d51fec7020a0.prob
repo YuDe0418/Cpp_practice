@@ -1,0 +1,1 @@
+{"name":"Local: conformity","url":"c:\\Coding\\C++\\KATTIS\\conformity.cpp","tests":[{"id":1714276777965,"input":"3\n100 101 102 103 488\n100 200 300 101 102\n103 102 101 488 100","output":"2"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Coding\\C++\\KATTIS\\conformity.cpp","group":"local","local":true}
